@@ -6,10 +6,12 @@ export default class Pickup extends Component {
             <div>
 
                 <select>
+                    <option>-Select Location-</option>
                     <option value="NY">New York</option>
                     <option value="TX">Dallas</option>
                 </select>  
                 <select>
+                    <option>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
