@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import {Route,Switch, Link , BrowserRouter as Router} from 'react-router-dom';
-import Cart from './Cart'
+// import {Route,Switch, Link , BrowserRouter as Router} from 'react-router-dom';
+// import Cart from './Cart'
 // import Location from './Location'
 //  import Data from './Data'
 
@@ -59,12 +59,7 @@ onChange = (event) => (this.setState({[event.target.name]: event.target.value })
                     <option value="5">5</option>
                 </select> 
                 
-                <Router>
-                    <Link id="cart" to="/cart">cart</Link>
-                    <Switch>
-                        <Route exact path="/cart" component={Cart}/>
-                    </Switch>
-                </Router> 
+                
                 {/* <Location/> */}
                 {/* <Data info={this.state.days}/> */}
             </div>
