@@ -31,7 +31,7 @@ add=()=> {
 
 //     this.setState({  isLoading: false,firstName:body });
 //   }
-
+ // "proxy": "http://localhost:8080",
 
 
 onChange = (event) => (this.setState({[event.target.name]: event.target.value }));
