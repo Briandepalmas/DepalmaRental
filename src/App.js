@@ -3,8 +3,6 @@ import {Route,Switch, Link , BrowserRouter as Router} from 'react-router-dom';
 import Pickup from './components/Pickup'
 import Jeep from './components/Jeep'
 import Cart from './components/Cart'
-import Location from './components/Location'
-// import Data from './components/Data'
 import './App.css';
 
 function App() {
@@ -29,7 +27,7 @@ function App() {
           {/* <Route exact path="/Product" component={Products} />
           <Route exact path="/Login" component={Login} />  */}
         </Switch> 
-        <Location/>    
+         
       </div>
     </Router> 
     </React.Fragment>

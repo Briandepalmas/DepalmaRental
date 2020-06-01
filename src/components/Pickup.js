@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import {Route,Switch, Link , BrowserRouter as Router} from 'react-router-dom';
 // import Cart from './Cart'
-// import Location from './Location'
+import Location from './Location'
 //  import Data from './Data'
 
 export default class Pickup extends Component {
@@ -31,7 +31,14 @@ add=()=> {
 
 onChange = (event) => (this.setState({[event.target.name]: event.target.value }));
     render() {
-    
+        let a=''
+        let nyc=<img src={`https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn,NY&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
+        let texas=<img src={`https://maps.googleapis.com/maps/api/staticmap?center=Dallas,TX&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
+    if (this.state.location==='NY'){
+        a=nyc;
+    }else if(this.state.location==='TX'){
+        a= texas
+    }
         return (
 
 
@@ -59,9 +66,12 @@ onChange = (event) => (this.setState({[event.target.name]: event.target.value })
                     <option value="5">5</option>
                 </select> 
                 
+                <div className="aa">
+                   {/* <Location/>  */}
+                   {a}
+                </div>
                 
-                {/* <Location/> */}
-                {/* <Data info={this.state.days}/> */}
+
             </div>
         )
     }

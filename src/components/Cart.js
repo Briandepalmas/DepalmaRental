@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 export default class Cart extends Component {
 
     state = {
@@ -19,13 +20,14 @@ export default class Cart extends Component {
 
     render() {
         const { isLoading,items} = this.state;
-         
-        // {items.map(item =>
-        //     <div key={item.id}>
+         let amount=0;
+        {items.map(item =>
+            <div key={item.id}>
     
-        //          {item.itemPrice}
-        //     </div>                   
-        //   )}     
+                 {/* {item.itemPrice} */}
+                 {amount +=item.itemPrice}
+            </div>                   
+          )}     
         
           if (isLoading) {
           return <p>Loading...</p>;
@@ -34,14 +36,16 @@ export default class Cart extends Component {
             <div className="faves">
                  {items.map(item =>
                   <div key={item.id}>
-                    
-                    {item.itemPrice}
+                  
+                    <h1>Item: {item.itemName}</h1>
+                    {/* <br></br> */}
+                    <h2 className="item-price">${item.itemPrice}</h2>
                     
                     
                     {/* <Delete item={employee.id}/> */}
                   </div>                 
                 )}
-               {/* <h1 id="test">f</h1>  */}
+               <h1 id="test">Total ${amount}</h1> 
             </div>
         )
     }
