@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-
+import Checkout from './Checkout'
+import Delete from './Delete'
 export default class Cart extends Component {
 
     state = {
@@ -37,15 +37,16 @@ export default class Cart extends Component {
                  {items.map(item =>
                   <div key={item.id}>
                   
-                    <h1>Item: {item.itemName}</h1>
+                    <h1>Item: {item.itemName} Price: ${item.itemPrice}<Delete item={item.id}/></h1>
                     {/* <br></br> */}
-                    <h2 className="item-price">${item.itemPrice}</h2>
+                    <h2 className="item-price"> </h2>
                     
                     
-                    {/* <Delete item={employee.id}/> */}
+                    
                   </div>                 
                 )}
-               <h1 id="test">Total ${amount}</h1> 
+               <h1 id="test">Total ${amount}<Checkout/></h1> 
+               
             </div>
         )
     }

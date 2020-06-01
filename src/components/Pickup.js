@@ -25,13 +25,21 @@ add=()=> {
        fetch('/brian_api/v1/employees',addEmployee)
 
 } 
+// async componentDidMount() {
+//     let itemres = await fetch('/brian_api/v1/employee');
+//     let body = await itemres.json();
 
+//     this.setState({  isLoading: false,firstName:body });
+//   }
 
-
+ff=()=>{
+    console.log(this.state.firstName)
+}
 
 onChange = (event) => (this.setState({[event.target.name]: event.target.value }));
     render() {
         let a=''
+        let d=<h1 id="ss">{this.state.firstName}</h1>
         let nyc=<img src={`https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn,NY&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
         let texas=<img src={`https://maps.googleapis.com/maps/api/staticmap?center=Dallas,TX&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
     if (this.state.location==='NY'){
@@ -39,12 +47,14 @@ onChange = (event) => (this.setState({[event.target.name]: event.target.value })
     }else if(this.state.location==='TX'){
         a= texas
     }
+    
         return (
 
 
             <div id="input">
-                <h1 id="name">Enter Name to Reserve</h1>
-              <input className="item-input" type="text" name="firstName" placeholder="Name"
+                <h1 className="name">Enter Name to Reserve</h1>
+                {d}
+              <input className="item-input" type="text" name="firstName" placeholder="Enter "
                 value={this.state.firstName} onChange={this.onChange}/>
 
                 <input className="price-input" 
@@ -67,7 +77,7 @@ onChange = (event) => (this.setState({[event.target.name]: event.target.value })
                 </select> 
                 
                 <div className="aa">
-                   {/* <Location/>  */}
+                  
                    {a}
                 </div>
                 

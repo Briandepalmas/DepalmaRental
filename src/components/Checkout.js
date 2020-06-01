@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 
 export default class Checkout extends Component {
+    buy=()=>{
+        alert("YOUR RESERVATION IS COMPLETE")
+    }
     render() {
         return (
             <div>
-                <button>Checkout</button>
+                <button onClick={this.buy}>Checkout</button>
             </div>
         )
     }

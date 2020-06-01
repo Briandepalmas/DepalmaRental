@@ -25,7 +25,7 @@
 #data{
   background-color: chartreuse;
 }
-#name{
+.name{
   color:white;
 }
 .nav{
@@ -56,4 +56,12 @@ margin-left: 30%;
 .item-price{
   background-color:#f4f4f4 ;
   /* font-weight: 200; */
+}
+#click{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-left: 80px; */
+}
+#ss{
+  color:red;
 }
