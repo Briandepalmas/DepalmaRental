@@ -14,7 +14,7 @@ state={
 }
 
 add=()=> { 
-   console.log("in addd")
+  
    const addEmployee = {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -32,9 +32,7 @@ add=()=> {
 //     this.setState({  isLoading: false,firstName:body });
 //   }
 
-ff=()=>{
-    console.log(this.state.firstName)
-}
+
 
 onChange = (event) => (this.setState({[event.target.name]: event.target.value }));
     render() {

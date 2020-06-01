@@ -3,6 +3,7 @@ import {Route,Switch, Link , BrowserRouter as Router} from 'react-router-dom';
 import Pickup from './components/Pickup'
 import Jeep from './components/Jeep'
 import Cart from './components/Cart'
+import Accesories from './components/Accesories'
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         
         <nav className="nav"> 
           <h1><Link to="/jeep">Vehicle</Link></h1>    
-          <h1><Link to="/Category">Accesories</Link></h1>
+          <h1><Link to="/Accesories">Accesories</Link></h1>
           <h1><Link to="/Product">About</Link></h1>
           <h1><Link id="cart" to="/cart">My 🛒</Link></h1>
         </nav>
@@ -24,6 +25,7 @@ function App() {
         <Switch>
           <Route exact path="/jeep" component={Jeep} />
           <Route exact path="/cart" component={Cart} />
+          <Route exact path="/Accesories" component={Accesories} />
           {/* <Route exact path="/Product" component={Products} />
           <Route exact path="/Login" component={Login} />  */}
         </Switch> 

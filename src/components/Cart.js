@@ -23,8 +23,7 @@ export default class Cart extends Component {
          let amount=0;
         {items.map(item =>
             <div key={item.id}>
-    
-                 {/* {item.itemPrice} */}
+
                  {amount +=item.itemPrice}
             </div>                   
           )}     
@@ -39,9 +38,7 @@ export default class Cart extends Component {
                   
                     <h1>Item: {item.itemName} Price: ${item.itemPrice}<Delete item={item.id}/></h1>
                     {/* <br></br> */}
-                    <h2 className="item-price"> </h2>
-                    
-                    
+                    <h2 className="item-price"> </h2>             
                     
                   </div>                 
                 )}
