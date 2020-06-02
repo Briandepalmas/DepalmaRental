@@ -4,7 +4,7 @@ export default class Accesories extends Component {
 
 
 state={
-    itemName:'abc',
+    itemName:'',
     itemPrice:0
 }
 

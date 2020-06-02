@@ -34,7 +34,7 @@ onChange = (event) => (this.setState({[event.target.name]: event.target.value })
         let a=''
         let d=<h1 id="ss">{this.state.firstName}</h1>
         let nyc=<img id="nyc" src={`https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn,NY&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
-        let texas=<img src={`https://maps.googleapis.com/maps/api/staticmap?center=Dallas,TX&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
+        let texas=<img id="tx"src={`https://maps.googleapis.com/maps/api/staticmap?center=Dallas,TX&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
     if (this.state.location==='NY'){
         a=nyc;
     }else if(this.state.location==='TX'){
@@ -45,7 +45,8 @@ onChange = (event) => (this.setState({[event.target.name]: event.target.value })
 
 
             <div id="input">
-                <h1 className="name">Enter Name to Reserve</h1>
+                
+                <h1 className="name">DEPALMA JEEP™ Enter Name to Reserve</h1>
                 {d}
               <input className="item-input" type="text" name="firstName" placeholder="Enter "
                 value={this.state.firstName} onChange={this.onChange}/>
