@@ -14,7 +14,7 @@ state={
 }
 
 add=()=> { 
-  
+  console.log("testtt")
    const addEmployee = {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -25,12 +25,7 @@ add=()=> {
        fetch('/brian_api/v1/employees',addEmployee)
 
 } 
-// async componentDidMount() {
-//     let itemres = await fetch('/brian_api/v1/employee');
-//     let body = await itemres.json();
 
-//     this.setState({  isLoading: false,firstName:body });
-//   }
  // "proxy": "http://localhost:8080",
 
 
@@ -38,7 +33,7 @@ onChange = (event) => (this.setState({[event.target.name]: event.target.value })
     render() {
         let a=''
         let d=<h1 id="ss">{this.state.firstName}</h1>
-        let nyc=<img src={`https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn,NY&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
+        let nyc=<img id="nyc" src={`https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn,NY&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
         let texas=<img src={`https://maps.googleapis.com/maps/api/staticmap?center=Dallas,TX&zoom=14&size=400x400&key=${process.env.REACT_APP_MAPSKEY}`}/>
     if (this.state.location==='NY'){
         a=nyc;

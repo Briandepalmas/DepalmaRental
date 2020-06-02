@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(251, 208, 127);
+}
 #location{
   margin-left: 20%;
   margin-top: 30px;
@@ -42,6 +45,7 @@ a{
 display: flex;
 justify-content: space-evenly;
 margin-top: 100px;
+
 /* align-items: center; */
 
 }
@@ -64,4 +68,19 @@ margin-left: 30%;
 }
 #ss{
   color:red;
+}
+#nyc{
+  border:solid
+}
+#jeep1{
+  border:solid
+}
+#jeep2{
+  border:solid
+}
+#jeep3{
+  border:solid
+}
+#jeep4{
+  border:solid
 }
