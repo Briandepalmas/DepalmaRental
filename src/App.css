@@ -1,6 +1,12 @@
 body{
   background-color: rgb(251, 208, 127);
 }
+#about{
+  margin-top: 100px;
+  text-align: center;
+  background-color: orange;
+  height:200px
+}
 #location{
   margin-left: 20%;
   margin-top: 30px;

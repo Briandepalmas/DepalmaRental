@@ -51,16 +51,16 @@ state={
            
             <div className="jeeps">
             
-             <img src="https://cnet2.cbsistatic.com/img/MH34bc-EK5oBEUKfcgqhaCerq10=/940x0/2019/09/26/25dfe142-99e1-494d-98a7-4c80b7abd663/2020-wrangler-promo.jpg" width="300" height="200" alt="jeep"/>        
-             <img src="https://cnet2.cbsistatic.com/img/MH34bc-EK5oBEUKfcgqhaCerq10=/940x0/2019/09/26/25dfe142-99e1-494d-98a7-4c80b7abd663/2020-wrangler-promo.jpg" width="300" height="200" alt="jeep"/>
-             <img src="https://cnet2.cbsistatic.com/img/MH34bc-EK5oBEUKfcgqhaCerq10=/940x0/2019/09/26/25dfe142-99e1-494d-98a7-4c80b7abd663/2020-wrangler-promo.jpg" width="300" height="200" alt="jeep"/>
-             <img src="https://cnet2.cbsistatic.com/img/MH34bc-EK5oBEUKfcgqhaCerq10=/940x0/2019/09/26/25dfe142-99e1-494d-98a7-4c80b7abd663/2020-wrangler-promo.jpg" width="300" height="200" alt="jeep"/>
+             <img src="https://www.gear.jeep.com/media/catalog/product/j/e/jeep-beck-mug-14rfl.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" width="300" height="200" alt="jeep"/>        
+             <img src="https://store.juventus.com/data/store/product/2/26345/product.jpg" width="300" height="200" alt="jeep"/>
+             <img src="https://s.yimg.com/aah/yhst-83673118800219/jeep-658-golf-umbrella-16.jpg" width="300" height="200" alt="jeep"/>
+             <img src="https://i.etsystatic.com/20076583/r/il/77e6b2/1875331862/il_794xN.1875331862_8qyr.jpg" width="300" height="200" alt="jeep"/>
             </div> 
             <div id="click">    
-              <button value="25" onClick={()=>this.setState({itemName:"heroku",itemPrice:25})}>Add Item</button>
-              <button value="50" onClick={()=>this.setState({itemName:"zzzzzz",itemPrice:50})}>Add Item</button>
-              <button>Add Item</button>
-              <button>Add Item</button>
+             <h1>Mug $25<button  onClick={()=>this.setState({itemName:"T-Shirt",itemPrice:25})}>Add Item</button></h1> 
+             <h1>Jersey $100<button  onClick={()=>this.setState({itemName:"",itemPrice:50})}>Add Item</button></h1> 
+             <h1>Umbrella $35<button>Add Item</button></h1> 
+             <h1>Beach Towel $40<button>Add Item</button></h1>
             </div>
             </React.Fragment>
         )
